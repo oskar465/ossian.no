@@ -44,12 +44,10 @@
   h1 img { display: block; width: clamp(240px, 62vw, 760px); height: auto; }
   .rule { width: 48px; height: 1px; background: var(--line); }
   .tags { margin: 0; font-size: 14px; letter-spacing: 0.18em; color: var(--soft); }
-  .contact {
-    display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 32px;
-    font-size: 18px; padding-top: 12px;
-  }
   a { color: var(--fg); text-decoration: none; }
   a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
+  .bar .mail { color: var(--muted); letter-spacing: 0.04em; }
+  .bar .mail:hover, .bar .mail:focus-visible { color: var(--fg); }
   @media (max-width: 480px) { .tags { font-size: 11px; letter-spacing: 0.08em; } }
 </style>
 </head>
@@ -62,12 +60,10 @@
     <h1><img src="logo.png" alt="Ossian" width="2366" height="426"></h1>
     <div class="rule" aria-hidden="true"></div>
     <p class="tags mono">BUSINESS ARCHITECTURE · OPERATIONS · SCALING</p>
-    <div class="contact">
-      <a href="mailto:oskar@ossian.no">oskar@ossian.no</a>
-    </div>
   </main>
   <footer class="bar mono">
     <span>OSSIAN AS</span>
+    <a class="mail" href="mailto:oskar@ossian.no">oskar@ossian.no</a>
   </footer>
 </body>
 </html>
