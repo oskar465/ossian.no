@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="nb">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ossian</title>
+<meta name="description" content="Ossian AS – rådgivning innen drift, telekom og systemer.">
+<meta property="og:title" content="Ossian">
+<meta property="og:description" content="Rådgivning innen drift, telekom og systemer.">
+<meta property="og:url" content="https://ossian.no/">
+<meta name="theme-color" content="#000000">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23000'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='38' font-weight='600' text-anchor='middle' fill='%23f5f5f5'%3Eo.%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #000; --fg: #f5f5f5; --muted: #9a9a9a; --soft: #b5b5b5; --line: #3a3a3a; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--fg); }
+  body {
+    min-height: 100vh; min-height: 100dvh;
+    display: flex; flex-direction: column; justify-content: space-between;
+    padding: 40px 24px;
+    font-family: 'Space Grotesk', Inter, system-ui, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .bar {
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px;
+    font-size: 13px; letter-spacing: 0.08em; color: var(--muted);
+  }
+  main {
+    display: flex; flex-direction: column; align-items: center; text-align: center;
+    gap: 28px; padding: 64px 0;
+  }
+  h1 { margin: 0; line-height: 0; }
+  h1 img { display: block; width: clamp(240px, 62vw, 760px); height: auto; }
+  .rule { width: 48px; height: 1px; background: var(--line); }
+  .tags { margin: 0; font-size: 14px; letter-spacing: 0.18em; color: var(--soft); }
+  .contact {
+    display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 32px;
+    font-size: 18px; padding-top: 12px;
+  }
+  a { color: var(--fg); text-decoration: none; }
+  a:hover, a:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
+  @media (max-width: 480px) { .tags { font-size: 12px; letter-spacing: 0.14em; } }
+</style>
+</head>
+<body>
+  <header class="bar mono">
+    <span>OSSIAN.NO</span>
+    <span>OSLO, NORGE</span>
+  </header>
+  <main>
+    <h1><img src="logo.png" alt="Ossian" width="2366" height="426"></h1>
+    <div class="rule" aria-hidden="true"></div>
+    <p class="tags mono">DRIFT · TELEKOM · SYSTEMER</p>
+    <div class="contact">
+      <a href="mailto:oskar@ossian.no">oskar@ossian.no</a>
+    </div>
+  </main>
+  <footer class="bar mono">
+    <span>OSSIAN AS</span>
+  </footer>
+</body>
+</html>
